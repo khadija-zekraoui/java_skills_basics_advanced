@@ -1,0 +1,4 @@
+---> DecimalComparator
+In Java, when working with floating-point numbers, precision can sometimes be an issue due to the way these numbers are represented in binary and when comparing double values, especially for equality, there might be tiny differences that occur due to rounding errors.
+Here, the multiplication by 1000 and casting to long is an attempt to work around this precision issue by comparing the numbers up to three decimal places, multiplying by 1000 moves the decimal point three places to the right, and casting to long effectively truncates the decimal part.
+The use of long is recommended over int if the result of multiplying by 1000 is a larger number, and using long prevents potential overflow issues, while if the multiplication is within the range of an int, casting to long might be considered unnecessary.

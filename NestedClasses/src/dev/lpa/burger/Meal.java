@@ -69,12 +69,12 @@ public class Meal {
 
     private class Burger extends Item {
 
-        private enum Extra {AVOCADO, BACON, CHEESE, KETCHUP, MAYO, MUSTARD, PICKLES;
+        private enum Extra {AVOCADO, LETTUCE, CHEESE, KETCHUP, MAYO, MUSTARD, PICKLES;
 
             private double getPrice() {
                 return switch (this) {
                     case AVOCADO -> 1.0;
-                    case BACON, CHEESE -> 1.5;
+                    case PICKLES, CHEESE -> 1.5;
                     default -> 0;
                 };
             }

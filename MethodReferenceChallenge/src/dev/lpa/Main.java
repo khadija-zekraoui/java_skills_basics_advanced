@@ -22,7 +22,7 @@ public class Main {
 
         String[] names = {"Anna", "Bob", "Cameron", "Donald", "Eva", "Francis"};
 
-        Person tim = new Person("Tim");
+        Person luna = new Person("Luna");
 
         List<UnaryOperator<String>> list = new ArrayList<>(List.of(
                 String::toUpperCase,
@@ -32,7 +32,7 @@ public class Main {
                 String::new,
 //                s -> new String("Howdy " + s),
                 String::valueOf,
-                tim::last,
+                luna::last,
                 (new Person("MARY"))::last
 
         ));

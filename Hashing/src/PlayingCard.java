@@ -1,5 +1,3 @@
-package dev.lpa;
-
 public class PlayingCard {
 
     private String suit;
